@@ -1,0 +1,35 @@
+{
+  "product_id": "NOTE-A001",
+  "terms_version": 1,
+  "effective_from": "2026-03-19",
+  "payload": {
+    "name": "示例自动赎回票据（两只股票篮子，最差标的口径）",
+    "issuer": "示例发行人",
+    "notional": "1000000.00",
+    "currency": "CNY",
+    "issue_date": "2026-03-19",
+    "maturity_date": "2027-03-19",
+    "calendar": "CN",
+    "settlement_lag_days": 5,
+    "basket": [
+      {"ticker": "600519.SH", "name": "示例白酒", "weight": "0.5", "initial_price": "1800.00"},
+      {"ticker": "300750.SZ", "name": "示例电池", "weight": "0.5", "initial_price": "220.00"}
+    ],
+    "barriers": {
+      "knock_in": {"ratio": "0.70", "observation": "daily_close"},
+      "autocall": {"ratio": "1.00", "observation": "scheduled"},
+      "coupon": {"ratio": "0.85", "observation": "scheduled"}
+    },
+    "coupon": {"annual_rate": "0.08", "frequency": "quarterly", "memory": true},
+    "autocall": {"redemption_ratio": "1.00"},
+    "maturity": {
+      "knocked_in_settlement": "cash",
+      "lot_size": 100,
+      "protection_ratio": "1.00"
+    },
+    "schedule": {
+      "observation_dates": ["2026-06-19", "2026-09-19", "2026-12-19", "2027-03-19"],
+      "ki_window": {"start": "2026-03-19", "end": "2027-03-19"}
+    }
+  }
+}

@@ -14,5 +14,22 @@
     "confirmed",
     "paid",
     "adjusted"
-  ]
+  ],
+  "price_statuses": [
+    "provisional",
+    "official",
+    "revoked"
+  ],
+  "observation_states": [
+    "scheduled",
+    "pending",
+    "confirmed",
+    "cancelled"
+  ],
+  "precision": {
+    "amount_decimals": 2,
+    "rounding": "ROUND_HALF_UP",
+    "ratio_decimals": 8
+  },
+  "adjustment_policy": "已付款现金流永不抹除；更正产生的差额以 adjustment 现金流另行结算"
 }

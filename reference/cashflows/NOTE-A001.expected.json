@@ -1,0 +1,35 @@
+{
+  "product_id": "NOTE-A001",
+  "as_of": "2026-09-20",
+  "note": "demo_scenario.py 回放完整时间线后的终态现金流样例",
+  "samples": [
+    {
+      "key": "coupon:2026-06-19",
+      "type": "coupon",
+      "state": "adjusted",
+      "amount": "20000.00",
+      "note": "Q1 票息已于 2026-06-26 支付；2026-07-02 行情更正后不再应付，原付款保留并标记 adjusted"
+    },
+    {
+      "key": "adj:coupon:2026-06-19:1",
+      "type": "adjustment",
+      "state": "confirmed",
+      "amount": "-20000.00",
+      "note": "更正后应付 0.00 - 已付 20000.00 = 差额 -20000.00，待结算收回"
+    },
+    {
+      "key": "coupon:2026-09-19",
+      "type": "coupon",
+      "state": "projected",
+      "amount": "40000.00",
+      "note": "Q2 票息预计：当期 20000.00 + 记忆补付 Q1 的 20000.00"
+    },
+    {
+      "key": "redemption:maturity",
+      "type": "redemption",
+      "state": "projected",
+      "amount": "1000000.00",
+      "note": "未敲入，按保护比例 1.00 预计到期兑付"
+    }
+  ]
+}
