@@ -1,0 +1,41 @@
+{
+  "grid_skip": [["000001.SZ", "2026-07-06"]],
+  "steps": [
+    {"process_due": ["ACN-2026-001", "2026-07-03"]},
+    {"process_due": ["ACN-2026-002", "2026-07-03"]},
+    {
+      "suspension": {
+        "underlying": "000001.SZ",
+        "date": "2026-07-06",
+        "recorded_at": "2026-07-06T14:00:00+00:00",
+        "note": "盘中停牌，官方收盘价待补"
+      }
+    },
+    {"process_due": ["ACN-2026-001", "2026-07-06"]},
+    {"process_due": ["ACN-2026-002", "2026-07-06"]},
+    {
+      "price": {
+        "underlying": "000001.SZ",
+        "date": "2026-07-06",
+        "price": "20.6000",
+        "status": "official",
+        "source": "exchange",
+        "recorded_at": "2026-07-06T20:30:00+00:00",
+        "note": "停牌后补发的官方收盘价"
+      }
+    },
+    {"settle_due": {"product": "ACN-2026-001", "key_prefix": "seed-001"}},
+    {"settle_due": {"product": "ACN-2026-002", "key_prefix": "seed-002"}},
+    {
+      "correction": {
+        "underlying": "000001.SZ",
+        "date": "2026-07-06",
+        "action": "reissue",
+        "price": "19.9000",
+        "reason": "交易所撤销 20.60 收盘价并补发 19.90（发行人更正）",
+        "recorded_at": "2026-07-08T10:00:00+00:00"
+      }
+    },
+    {"process_due": ["ACN-2026-001", "2026-09-18"]}
+  ]
+}

@@ -13,6 +13,35 @@
     "projected",
     "confirmed",
     "paid",
-    "adjusted"
-  ]
+    "adjusted",
+    "cancelled"
+  ],
+  "observation_states": [
+    "postponed",
+    "pending_confirmation",
+    "confirmed",
+    "unresolved"
+  ],
+  "price_statuses": [
+    "provisional",
+    "official",
+    "suspended",
+    "cancelled"
+  ],
+  "adjustment_directions": [
+    "pay",
+    "collect"
+  ],
+  "precision": {
+    "money_dp": 2,
+    "price_dp": 4,
+    "ratio_dp": 6,
+    "rounding": "ROUND_HALF_UP"
+  },
+  "correction_policy": {
+    "unpaid": "recompute_as_new_version",
+    "paid": "difference_adjustment_keep_original",
+    "provisional_price": "pending_confirmation_only",
+    "missing_price": "postpone_per_terms_never_skip"
+  }
 }

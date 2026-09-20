@@ -1,0 +1,86 @@
+[
+  {
+    "product_id": "ACN-2026-002",
+    "effective_from": "2025-07-07",
+    "recorded_at": "2025-07-03T10:00:00+00:00",
+    "reason": "terms_issued",
+    "terms": {
+      "notional": "2000000",
+      "currency": "CNY",
+      "issue_date": "2025-07-07",
+      "maturity_date": "2026-07-06",
+      "basket": [
+        {"underlying": "600036.SH", "initial_price": "40.0000", "weight": "0.5"},
+        {"underlying": "000333.SZ", "initial_price": "50.0000", "weight": "0.5"}
+      ],
+      "knock_out_barrier": "1.0000",
+      "knock_in_barrier": "0.7500",
+      "coupon_barrier": "0.8000",
+      "coupon_rate_per_period": "0.0125",
+      "coupon_memory": true,
+      "put_strike": "0.7500",
+      "delivery": "cash",
+      "autocall_dates": ["2025-10-09", "2026-01-05", "2026-04-06", "2026-07-06"],
+      "holiday_calendar": "CN-SSE",
+      "roll_convention": "modified_following",
+      "payment_lag_days": 2,
+      "missing_price_rule": {"action": "postpone", "max_days": 8}
+    }
+  },
+  {
+    "product_id": "ACN-2026-002",
+    "effective_from": "2026-03-01",
+    "recorded_at": "2026-02-25T10:00:00+00:00",
+    "reason": "basket_change",
+    "terms": {
+      "notional": "2000000",
+      "currency": "CNY",
+      "issue_date": "2025-07-07",
+      "maturity_date": "2026-07-06",
+      "basket": [
+        {"underlying": "600036.SH", "initial_price": "40.0000", "weight": "0.5"},
+        {"underlying": "002594.SZ", "initial_price": "25.0000", "weight": "0.5"}
+      ],
+      "knock_out_barrier": "1.0000",
+      "knock_in_barrier": "0.7500",
+      "coupon_barrier": "0.8000",
+      "coupon_rate_per_period": "0.0125",
+      "coupon_memory": true,
+      "put_strike": "0.7500",
+      "delivery": "cash",
+      "autocall_dates": ["2025-10-09", "2026-01-05", "2026-04-06", "2026-07-06"],
+      "holiday_calendar": "CN-SSE",
+      "roll_convention": "modified_following",
+      "payment_lag_days": 2,
+      "missing_price_rule": {"action": "postpone", "max_days": 8}
+    }
+  },
+  {
+    "product_id": "ACN-2026-001",
+    "effective_from": "2026-01-05",
+    "recorded_at": "2025-12-28T10:00:00+00:00",
+    "reason": "terms_issued",
+    "terms": {
+      "notional": "1000000",
+      "currency": "CNY",
+      "issue_date": "2026-01-05",
+      "maturity_date": "2027-01-05",
+      "basket": [
+        {"underlying": "600000.SH", "initial_price": "10.0000", "weight": "0.5"},
+        {"underlying": "000001.SZ", "initial_price": "20.0000", "weight": "0.5"}
+      ],
+      "knock_out_barrier": "1.0000",
+      "knock_in_barrier": "0.7500",
+      "coupon_barrier": "0.8500",
+      "coupon_rate_per_period": "0.0125",
+      "coupon_memory": true,
+      "put_strike": "0.7500",
+      "delivery": "cash",
+      "autocall_dates": ["2026-04-06", "2026-07-06", "2026-10-05", "2027-01-05"],
+      "holiday_calendar": "CN-SSE",
+      "roll_convention": "modified_following",
+      "payment_lag_days": 2,
+      "missing_price_rule": {"action": "postpone", "max_days": 8}
+    }
+  }
+]

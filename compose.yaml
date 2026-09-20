@@ -3,6 +3,8 @@ services:
     build: .
     environment:
       PORT: 8000
+      RUNTIME_DIR: .runtime
+      SEED_DIR: reference/seed
     ports:
       - "8000:8000"
     healthcheck:

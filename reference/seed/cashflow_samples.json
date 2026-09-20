@@ -1,0 +1,16 @@
+{
+  "ACN-2026-001": [
+    {"kind": "coupon", "period": 1, "due_date": "2026-04-08", "amount": "12500.00"},
+    {"kind": "coupon", "period": 2, "due_date": "2026-07-08", "amount": "12500.00"},
+    {"kind": "coupon", "period": 3, "due_date": "2026-10-08", "amount": "12500.00"},
+    {"kind": "coupon", "period": 4, "due_date": "2027-01-07", "amount": "12500.00"},
+    {"kind": "redemption", "due_date": "2027-01-07", "amount": "1000000.00"}
+  ],
+  "ACN-2026-002": [
+    {"kind": "coupon", "period": 1, "due_date": "2025-10-13", "amount": "25000.00"},
+    {"kind": "coupon", "period": 2, "due_date": "2026-01-07", "amount": "25000.00"},
+    {"kind": "coupon", "period": 3, "due_date": "2026-04-08", "amount": "25000.00"},
+    {"kind": "coupon", "period": 4, "due_date": "2026-07-08", "amount": "25000.00"},
+    {"kind": "redemption", "due_date": "2026-07-08", "amount": "2000000.00"}
+  ]
+}
